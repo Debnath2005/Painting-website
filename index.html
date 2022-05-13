@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="paint.css">
+        <title>paint style</title>
+    </head>
+    <body>
+        <h1 style="text-align:center">paint 
+            your own</h1>
+        <div class="container">
+            <div class="box">
+                <ul>
+                    <li class="item">
+                        <input type="color" name="color" id="color"
+                            value="#ffff">
+                    </li>
+                    <li class="item">
+                        <input type="number" name="size" id="pen-size"
+                            placeholder="size" value="10">
+                    </li>
+                    <li class="item">
+                        sketch:
+                        <label for="pen-pencil">pencil
+                            <input type="radio" name="pen" id="pen-pencil"
+                                checked value="pencil">
+                        </label>
+
+                    </li>
+                    <li class="item">
+                        <label for="pen-pencil">brush
+                            <input type="radio" name="pen" id="pen-pencil"
+                                value="brush">
+                        </label>
+                    </li>
+                    <li class="item" id="save-canvas">save</li>
+                    <li class="item" id="reset-canvas">reset</li>
+                </ul>
+            </div>
+            <hr style="color:aliceblue">
+            <div class="editor">
+            </div>
+        </div>
+        <div id="convas-wrapper"></div>
+    </body>
+
+    <script src="paint.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+        integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+</html>
